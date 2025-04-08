@@ -7,7 +7,10 @@ export default defineConfig({
     appDirectory: 'src',
   },
   server: {
-    preset: 'vercel'
+    preset: 'vercel',
+    prerender: {
+      routes: ['/']
+    }
   },
   vite: {
     plugins: [
